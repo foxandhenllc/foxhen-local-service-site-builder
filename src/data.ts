@@ -1,12 +1,44 @@
-export const sample = {
+export type ItemStatus = "backlog" | "active" | "blocked" | "ready" | "done";
+
+export type WorkItem = {
+  id: string;
+  title: string;
+  category: string;
+  owner: string;
+  status: ItemStatus;
+  priority: number;
+  effort: number;
+  friction: number;
+  value: number;
+  due: string;
+  notes: string;
+};
+
+export type QualityCheck = {
+  id: string;
+  label: string;
+  passed: boolean;
+  weight: number;
+};
+
+export const sample: {
+  repoName: string;
+  title: string;
+  subtitle: string;
+  serviceLine: string;
+  description: string;
+  repositoryUrl: string;
+  liveDemoUrl: string;
+  theme: { accent: string; accent2: string; ink: string; soft: string; warm: string };
+  items: WorkItem[];
+  checks: QualityCheck[];
+  deliverables: string[];
+} = {
   "repoName": "foxhen-local-service-site-builder",
   "title": "Local Service Site Builder",
-  "subtitle": "Landing page planning for service businesses",
+  "subtitle": "landing page plan",
   "serviceLine": "Local website build sprint",
-  "heroTitle": "Plan a credible local-service website in one tight sprint.",
-  "heroCopy": "A demo builder for a fictional service company: sections, conversion blocks, trust proof, mobile checks, and launch notes are all staged in one workspace.",
-  "primaryAction": "Assemble page",
-  "secondaryAction": "Check mobile",
+  "description": "Configure a local-service page plan with sections, proof, mobile checks, CTAs, and launch readiness.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-local-service-site-builder",
   "liveDemoUrl": "https://foxhen-local-service-site-builder.vercel.app",
   "theme": {
@@ -14,115 +46,124 @@ export const sample = {
     "accent2": "#f0a84b",
     "ink": "#07170f",
     "soft": "#eaf8ef",
-    "warm": "#fff1dc",
-    "surface": "#fffaf4",
-    "muted": "#5c667a",
-    "border": "rgba(7, 18, 31, 0.12)"
+    "warm": "#fff1dc"
   },
-  "metrics": [
+  "items": [
     {
-      "label": "Launch sections",
-      "value": "7",
-      "note": "above fold mapped"
-    },
-    {
-      "label": "Mobile score",
-      "value": "96%",
-      "note": "+19 pts"
-    },
-    {
-      "label": "CTA clarity",
-      "value": "A",
-      "note": "single path"
-    }
-  ],
-  "stages": [
-    {
-      "label": "Offer",
-      "detail": "Clarify service, service area, promise, and conversion action above the fold.",
-      "status": "ready",
-      "owner": "Strategy",
-      "index": 1
-    },
-    {
-      "label": "Proof",
-      "detail": "Add review blocks, credentials, before-after signals, and practical buyer objections.",
+      "id": "loc-1",
+      "title": "Hero copy",
+      "category": "Intake",
+      "owner": "Chris",
       "status": "active",
-      "owner": "Design",
-      "index": 2
+      "priority": 5,
+      "effort": 2,
+      "friction": 1,
+      "value": 5,
+      "due": "Today",
+      "notes": "Sample landing page plan work item for local website build sprint."
     },
     {
-      "label": "Conversion",
-      "detail": "Map calls, forms, booking links, and fallback contact states.",
-      "status": "waiting",
-      "owner": "Owner",
-      "index": 3
+      "id": "loc-2",
+      "title": "Trust rail",
+      "category": "Build",
+      "owner": "Fox & Hen",
+      "status": "backlog",
+      "priority": 4,
+      "effort": 4,
+      "friction": 2,
+      "value": 4,
+      "due": "24h",
+      "notes": "Sample landing page plan work item for local website build sprint."
     },
     {
-      "label": "Launch",
-      "detail": "Bundle copy, responsive QA, and a deploy checklist for handoff.",
-      "status": "queued",
-      "owner": "Studio",
-      "index": 4
+      "id": "loc-3",
+      "title": "Service section",
+      "category": "Review",
+      "owner": "Buyer",
+      "status": "blocked",
+      "priority": 3,
+      "effort": 3,
+      "friction": 4,
+      "value": 4,
+      "due": "48h",
+      "notes": "Sample landing page plan work item for local website build sprint."
+    },
+    {
+      "id": "loc-4",
+      "title": "Booking path",
+      "category": "Export",
+      "owner": "Automation",
+      "status": "ready",
+      "priority": 4,
+      "effort": 2,
+      "friction": 2,
+      "value": 3,
+      "due": "This week",
+      "notes": "Sample landing page plan work item for local website build sprint."
+    },
+    {
+      "id": "loc-5",
+      "title": "Review block",
+      "category": "Intake",
+      "owner": "QA",
+      "status": "backlog",
+      "priority": 2,
+      "effort": 1,
+      "friction": 1,
+      "value": 3,
+      "due": "Waiting",
+      "notes": "Sample landing page plan work item for local website build sprint."
+    },
+    {
+      "id": "loc-6",
+      "title": "Launch checklist",
+      "category": "Build",
+      "owner": "Chris",
+      "status": "done",
+      "priority": 5,
+      "effort": 5,
+      "friction": 3,
+      "value": 5,
+      "due": "Next pass",
+      "notes": "Sample landing page plan work item for local website build sprint."
     }
   ],
-  "workItems": [
+  "checks": [
     {
-      "title": "Hero section",
-      "detail": "Align headline, service area, and CTA",
-      "status": "ready"
+      "id": "payer",
+      "label": "Payer or owner is clear",
+      "passed": true,
+      "weight": 18
     },
     {
-      "title": "Trust rail",
-      "detail": "Place proof where buyer hesitation appears",
-      "status": "active"
+      "id": "deliverable",
+      "label": "Deliverable has acceptance criteria",
+      "passed": true,
+      "weight": 18
     },
     {
-      "title": "Service cards",
-      "detail": "Cut vague copy and make each card actionable",
-      "status": "waiting"
+      "id": "friction",
+      "label": "Account/access friction is documented",
+      "passed": false,
+      "weight": 14
     },
     {
-      "title": "Launch checklist",
-      "detail": "Prepare SEO, QA, and handoff notes",
-      "status": "queued"
+      "id": "handoff",
+      "label": "Handoff package is generated",
+      "passed": false,
+      "weight": 16
+    },
+    {
+      "id": "reuse",
+      "label": "Repeatable pipeline note exists",
+      "passed": true,
+      "weight": 12
     }
   ],
   "deliverables": [
-    {
-      "title": "Section map",
-      "detail": "A conversion-focused page outline with hierarchy and proof placement."
-    },
-    {
-      "title": "Copy pass",
-      "detail": "Plain-language service copy tuned for local search intent."
-    },
-    {
-      "title": "Launch QA",
-      "detail": "Mobile, contrast, CTA, and form-readiness checks."
-    }
-  ],
-  "timeline": [
-    {
-      "time": "0-3 hrs",
-      "detail": "Intake and page architecture"
-    },
-    {
-      "time": "3-18 hrs",
-      "detail": "Build first responsive page pass"
-    },
-    {
-      "time": "18-24 hrs",
-      "detail": "QA, copy polish, and publish notes"
-    }
-  ],
-  "proof": [
-    "Fits fast fixed-fee website offers.",
-    "Shows practical conversion thinking, not just visual mockups.",
-    "Works with fictional business data and no external services."
+    "Ranked board",
+    "Editable item inspector",
+    "Readiness checklist",
+    "Exportable handoff report"
   ]
-} as const;
-
-export type StageStatus = "ready" | "active" | "waiting" | "queued";
-export type DemoStage = (typeof sample.stages)[number];
-export type WorkItem = (typeof sample.workItems)[number];
+};
