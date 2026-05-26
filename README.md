@@ -1,6 +1,6 @@
 # Local Service Site Builder
 
-Public Fox & Hen working sample for **Local website build sprint**.
+Local service website starter for service pages, quote forms, trust sections, local SEO, and deployment-ready structure.
 
 ![Demo screenshot](docs/demo-screenshot.png)
 
@@ -8,6 +8,10 @@ Public Fox & Hen working sample for **Local website build sprint**.
 
 - Demo: [https://foxhen-local-service-site-builder.vercel.app](https://foxhen-local-service-site-builder.vercel.app)
 - Repository: [https://github.com/foxandhenllc/foxhen-local-service-site-builder](https://github.com/foxandhenllc/foxhen-local-service-site-builder)
+
+## Purpose
+
+Local service website starter for service pages, quote forms, trust sections, local SEO, and deployment-ready structure.
 
 ## Fully Working Behaviors
 

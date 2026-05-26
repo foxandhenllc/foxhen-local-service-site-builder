@@ -21,5 +21,16 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "Local service website starter for service pages, quote forms, trust sections, local SEO, and deployment-ready structure.",
+  "homepage": "https://foxhen-local-service-site-builder.vercel.app",
+  "keywords": [
+    "local-seo",
+    "website-builder",
+    "small-business",
+    "react",
+    "typescript",
+    "vite",
+    "service-business"
+  ]
 }
