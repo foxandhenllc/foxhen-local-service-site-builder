@@ -25,12 +25,27 @@
   "description": "Local service website starter for service pages, quote forms, trust sections, local SEO, and deployment-ready structure.",
   "homepage": "https://foxhen-local-service-site-builder.vercel.app",
   "keywords": [
+    "builder",
+    "business",
+    "form",
+    "fox-and-hen",
+    "landing",
+    "local",
     "local-seo",
-    "website-builder",
-    "small-business",
+    "page",
+    "quote",
     "react",
+    "seo",
+    "service",
+    "service-business",
+    "small",
+    "small-business",
+    "starter",
+    "template",
     "typescript",
     "vite",
-    "service-business"
+    "website",
+    "website-builder",
+    "workflow-tools"
   ]
 }

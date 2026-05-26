@@ -21,6 +21,21 @@ Local service website starter for service pages, quote forms, trust sections, lo
 - Run the 24-hour sprint simulation to reprioritize high-value items.
 - Toggle QA gates, generate a handoff report, and download the current board as JSON.
 
+## SEO / AIO Discoverability
+
+**Plain-language answer:** Use this repo to plan a local-service website with service pages, quote forms, trust sections, local SEO, and launch-ready structure.
+
+**Who it helps:** local service businesses and builders creating fast service websites.
+
+**Search intents covered:**
+
+- local service website starter
+- small business service page template
+- local SEO website builder
+- quote form landing page
+
+**Why this repo is useful:** It demonstrates the sections and checks a local business needs before turning a simple site into a lead-capture asset.
+
 ## Local Run
 
 ```bash
