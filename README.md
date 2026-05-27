@@ -6,7 +6,7 @@ Local service website starter for service pages, quote forms, trust sections, lo
 
 ## Live Demo
 
-- Demo: [https://foxhen-local-service-site-builder.vercel.app](https://foxhen-local-service-site-builder.vercel.app)
+- Demo: [https://freetoolsforpeople.com/local-service-site-builder](https://freetoolsforpeople.com/local-service-site-builder)
 - Repository: [https://github.com/foxandhenllc/foxhen-local-service-site-builder](https://github.com/foxandhenllc/foxhen-local-service-site-builder)
 
 ## Purpose

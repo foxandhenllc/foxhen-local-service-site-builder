@@ -40,7 +40,7 @@ export const sample: {
   "serviceLine": "Local website build sprint",
   "description": "Configure a local-service page plan with sections, proof, mobile checks, CTAs, and launch readiness.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-local-service-site-builder",
-  "liveDemoUrl": "https://foxhen-local-service-site-builder.vercel.app",
+  "liveDemoUrl": "https://freetoolsforpeople.com/local-service-site-builder",
   "theme": {
     "accent": "#1b5a42",
     "accent2": "#f0a84b",
