@@ -47,5 +47,6 @@
     "website",
     "website-builder",
     "workflow-tools"
-  ]
+  ],
+  "license": "MIT"
 }
